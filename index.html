@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Prova Técnica</title>
+</head>
+
+<body>
+
+<form id="input" name="myform" onsubmit="return false" method="GET">
+
+    <!-- first box -->
+    
+    <div class="container">
+        <div class="container2">
+            <div class="instructions">
+                <h1>Bem Vindo(a)</h1>
+                <p> Instruções:
+                    <br><br>
+                    Para a <strong>parte 1</strong> basta digitar qualquer texto codificado em base64 e clicar no botão "Decodificar" para conseguir ler o código.
+                </p>
+                <p>
+                    Para a <strong>parte 2</strong> digite qualquer texto na área indicada e clique em "Contar" o número exato de vogais e consoantes no seu texto será mostrado logo em seguida.
+                </p>
+                
+            </div>
+        
+            <div class="base64">
+                <div class="buttons">
+                    <button class="btn" id="decode">Decodificar</button> 
+                </div>
+                <div class="container3">
+                    <div class="txta">
+                        <textarea class="txt" placeholder="Digite Aqui o Código!" id="base64Input" cols="35" rows="14"></textarea>
+                        <textarea class="txt" placeholder="Resultado Aqui!" id="base64Output" class="output" cols="35" rows="14" readonly></textarea>
+                    </div>
+                        
+                    </div>
+            
+                    <script src="script.js"></script>
+                
+            
+                    <!-- second box -->
+            
+                    <div class="counter">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input class="btn" id="count" type="button" value="Contar" onclick="go()">
+                                </td>    
+                            </tr>
+                            <tr>
+                                <td><textarea class="txt" placeholder="Digite Aqui o Texto!" id="t1" cols="35" rows="14"></textarea></td>
+                            </tr>
+                        </table>
+                        <div class="results">
+                            <p id="p1"></p>
+                            <p id="p2"></p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+                    
+    </div> 
+                
+</form>  
+</body>
+
+</html>
